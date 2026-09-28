@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formation Tailwind</title>
+        <link href="../dist/output.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="text-brand text-3xl font-bold p-8">Hello Tailwind</h1>
+    <!-- Spacing -->
+        <div class="p-4 bg-gray-200">Padding 4 = 1rem = 16px</div>
+        <div class="px-6 py-2 bg-gray-200 mt-2">Padding horizontal vertical</div>
+        <div class="-mt-2 bg-gray-200">Marge négative</div>
+
+    <!-- Typography -->
+        <p class="font-mono text-sm">Petit texte</p>
+        <p class="text-3xl font-bold">Gros titre</p>
+        <p class="text-3xl font-semibold">Moyen gros titre</p>
+        <p class="font-light text-gray-500">Texte léger</p>
+
+    <!-- Colors -->
+        <div class="bg-blue-50 text-blue-950 p-4">Très clair</div>
+        <div class="bg-blue-50 text-white p-4">Standard</div>
+        <div class="bg-blue-950 text-white p-4">Très foncé</div>
+
+    <!-- Sizing  -->
+        <div class="w-6/12 bg-yellow-200">50%</div>
+        <div class="max-w-md mx-auto bg-yellow-400 p-4">Plafonné et centré</div>
+
+    <!-- Flexbox -->
+        <div class="flex justify-between items-center gap-4 bg-green-100 p-4">
+            <span>Element 1</span><span>Element 2</span>
+        </div>
+
+    <!-- Grid -->
+        <div class="grid grid-cols-3 gap-6">
+            <div class="bg-purple-200 p-4">1</div>
+            <div class="bg-purple-200 p-4">2</div>
+            <div class="bg-purple-200 p-4">3</div>
+        </div>
+    </body>
+</html>
