@@ -7,9 +7,18 @@ module.exports = {
     // Ici le band n'est aps anodin, sans lui Tailwind remplacerait TOUTE la palette de couleurs par défaut de Tailwind (bleu, rouge, vert, ...) par cette couleur, plus auucn clsse bg-blue-500 ne fonctionnerait
     extend: {
       colors: {
-          brand: "#0EA5E9"
+          brand: {
+          50: "#F0F9FF", 100: "#E0F2FE", 200: "#BAE6FD", 400: "#38BDF8",
+          500: "#0EA5E9", 600: "#0284C7", 700: "#0369A1", 900: "#0C4A6E"
+          },
+          module1 : "#799DA7",
+          module2 : "#A6C4CE",
+          module3 : "#9BC0C3",
         }
     },
+    fontFamily: {
+      sans : ["Raleway", "sans-serif", "system-ui"]
+    }
   },
   //plugins, c'est une liste de fonctionnalités aditionnelles qu'on peut brancher.
   plugins: [],

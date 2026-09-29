@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDAP - Portail d'accès aux données (version Tailwind)</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="text-slate-800">
+
+    <div class="bg-white border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-2 flex items-center justify-between">
+            <a href="" class="flex items-center gap-2 text-sky-600 hover:text-sky-800">
+                <img src="https://cdap.casd.eu/img/cdap_user_bleu.svg" alt="Connectez-vous" class="h-5">
+                <span>Connectez-vous</span>
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="https://casd.status.io/" target="_blank" class="text-slate-500 hover:text-slate-700">status.io</a>
+                <a href="/casd" title="CASD">
+                    <img src="https://cdap.casd.eu/img/casd-gris.svg" alt="CASD" class="h-4">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white border-b-4 border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row md:items-center gap-6">
+                <a href="/" class="flex items-center gap-4 md:w-1/3">
+                    <img src="https://cdap.casd.eu/img/cdap.svg" alt="CDAP - Portail d'accès aux données" title="page d'accueil CDAP" class="h-12">
+                    <h1 class="text-lg font-semibold text-sky-600 leading-tight">Confidential Data Access Portal</h1>
+                </a>
+                <div class="md:w-2/3">
+                    <div class="flex justify-center md:justify-end gap-2 mt-2 text-sm">
+                        <a href="https://cdap.casd.eu/lang/fr" class="text-sky-600 hover:underline">FR</a>
+                        <a href="https://cdap.casd.eu/lang/en" class="text-sky-600 hover:underline">EN</a>
+                    </div>
+                    <p class="text-center text-sm text-slate-600">
+                        Le portail CDAP (portail d'accès à des données confidentielles) regroupe 3 modules permettant de faire des
+                        <strong>demandes d'accès à des données sécurisées</strong> ainsi que de pouvoir faire des recherches sur les
+                        données déjà utilisées sur le CASD et d'autres types de données sécurisées.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-4">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-white">
+
+                <a href="/comite-secret-statistique" class="module-card bg-module1">
+                    <div>
+                        <h3 class="text-2xl mb-2">01</h3>
+                        <p>Comité Du Secret Statistique<br>(CSS)</p>
+                    </div>
+                    <img src="https://cdap.casd.eu/img/fleche-blanche.svg" alt="" class="w-6 h-6">
+                </a>
+
+                <a href="/atih" class="module-card bg-module2">
+                    <div>
+                        <h3 class="text-2xl mb-2">02</h3>
+                        <p>Bulles sécurisées pour les données des séjours hospitaliers<br>(ATIH)</p>
+                    </div>
+                    <img src="https://cdap.casd.eu/img/fleche-blanche.svg" alt="" class="w-6 h-6">
+                </a>
+
+                <a href="/snds" class="module-card bg-module3">
+                    <div>
+                        <h3 class="text-2xl mb-2">03</h3>
+                        <p>Bulles sécurisées pour les données du Système National de Données de Santé<br>(SNDS)</p>
+                    </div>
+                    <img src="https://cdap.casd.eu/img/fleche-blanche.svg" alt="" class="w-6 h-6">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-8">
+            <form class="flex items-center bg-white border border-gray-200 overflow-hidden">
+                <div class="flex items-center justify-center bg-slate-800 px-4 py-3">
+                <img src="https://cdap.casd.eu/img/loupe-blanche.svg" alt="" class="h-7">
+                </div>
+                <input type="text" placeholder="Quelles données recherchez-vous?"
+                    class="flex-1 px-4 py-3 outline-none text-slate-700 placeholder-slate-400">
+            </form>
+            <div class="flex flex-col md:flex-row gap-8">
+
+                <div class="md:w-1/4">
+                    <div class="flex items-center gap-2 font-semibold mb-3">
+                        <span>▼</span>
+                        <span>Thèmes</span>
+                    </div>
+                    <p class="py-1"><a href="1" class="text-slate-700 hover:text-sky-600">Économie – Conjoncture – Comptes nationaux</a></p>
+                    <p class="py-1"><a href="2" class="text-slate-700 hover:text-sky-600">Démographie</a></p>
+                    <p class="py-1"><a href="3" class="text-slate-700 hover:text-sky-600">Revenus – Pouvoir d'achat – Consommation</a></p>
+                    <p class="py-1"><a href="4" class="text-slate-700 hover:text-sky-600">Santé - Conditions de vie – Société</a></p>
+                    <p class="py-1"><a href="5" class="text-slate-700 hover:text-sky-600">Marché du travail – Salaires</a></p>
+                    <p class="py-1"><a href="10" class="font-semibold text-sky-700">Banque - Finance</a></p>
+                    <p class="py-1"><a href="6" class="text-slate-700 hover:text-sky-600">Entreprises</a></p>
+                    <p class="py-1"><a href="7" class="text-slate-700 hover:text-sky-600">Secteurs d'activité</a></p>
+                    <p class="py-1"><a href="9" class="text-slate-700 hover:text-sky-600">Développement durable – Environnement</a></p>
+                </div>
+
+                <div class="md:w-3/4">
+                    <div class="flex items-center justify-between border-b border-gray-100 py-3">
+                        <span>OPC : Données de bilans des OPC</span>
+                        <div class="flex items-center gap-3 text-sm">
+                            <a href="/comite-secret-statistique" class="hover:text-orange-600">→</a>
+                            <a href="/comite-secret-statistique" class="font-semibold hover:text-orange-600">CSS</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-gray-100 py-3">
+                        <span>SHS - TITRE À TITRE : Détention de titres par secteur - France (titre à titre)</span>
+                        <div class="flex items-center gap-3 text-sm">
+                            <a href="/comite-secret-statistique" class="hover:text-orange-600">→</a>
+                            <a href="/comite-secret-statistique" class="font-semibold hover:text-orange-600">CSS</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-gray-100 py-3">
+                        <span>SHS - TOTAUX : Détention de titres par secteur - France (totaux)</span>
+                        <div class="flex items-center gap-3 text-sm">
+                            <a href="/comite-secret-statistique" class="hover:text-orange-600">→</a>
+                            <a href="/comite-secret-statistique" class="font-semibold hover:text-orange-600">CSS</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-gray-100 py-3">
+                        <span>SHS - RÉVISÉE : Détention de titres par secteur - France - Révisée</span>
+                        <div class="flex items-center gap-3 text-sm">
+                            <a href="/comite-secret-statistique" class="hover:text-orange-600">→</a>
+                            <a href="/comite-secret-statistique" class="font-semibold hover:text-orange-600">CSS</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-gray-100 py-3">
+                        <span>TCN : Titres de Créances Négociables (TCN)</span>
+                        <div class="flex items-center gap-3 text-sm">
+                            <a href="/comite-secret-statistique" class="hover:text-orange-600">→</a>
+                            <a href="/comite-secret-statistique" class="font-semibold hover:text-orange-600">CSS</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border-b border-gray-100 py-3">
+                        <span>OTC : Produits dérivés de gré à gré (OTC)</span>
+                        <div class="flex items-center gap-3 text-sm">
+                            <a href="/comite-secret-statistique" class="hover:text-orange-600">→</a>
+                            <a href="/comite-secret-statistique" class="font-semibold hover:text-orange-600">CSS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col items-center gap-8">
+            <img src="https://cdap.casd.eu/img/casd_badge.svg" alt="CASD" class="w-20">
+            <div class="flex flex-col md:flex-row gap-8 w-full">
+                <div class="md:w-1/2 md:text-right md:border-r md:pr-6 text-slate-500">
+                    <p>CASD</p>
+                    <p>Le Polaris</p>
+                    <p>76 avenue Pierre Brossolette</p>
+                    <p>92240 MALAKOFF - France</p>
+                </div>
+                <div class="md:w-1/2 md:pl-6 text-slate-500">
+                    <p><a href="https://cdap.casd.eu/" class="hover:text-slate-700">Accueil</a></p>
+                    <p><a href="https://cdap.casd.eu/mentions-legales-cdap" target="_blank" class="hover:text-slate-700">Mentions légales</a></p>
+                    <p><a href="https://www.casd.eu/protection-des-donnees-personnelles/" target="_blank" class="hover:text-slate-700">Données personnelles</a></p>
+                    <p><a href="https://www.casd.eu/" target="_blank" class="hover:text-slate-700">CASD</a></p>
+                </div>
+            </div>
+            <img src="https://cdap.casd.eu/img/casd-gris.svg" alt="CASD" class="w-20">
+        </div>
+    </div>
+
+</body>
+</html>
+</content>

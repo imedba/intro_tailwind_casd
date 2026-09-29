@@ -137,3 +137,52 @@ Deux approches pour éviter qu'un même composant dérive d'une page à l'autre 
 - Documentation officielle (version utilisée pour cette formation) : [v3.tailwindcss.com/docs](https://v3.tailwindcss.com/docs)
 - Extension VS Code : [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 </content>
+
+## Jour 2
+
+### Police d'écriture
+
+Pour importer une police d'écriture externe, on l'importe depuis sa source dans le fichier `./src/input.css`, puis on la configure dans `tailwind.config.js`.
+#### input.css
+```css
+/* Pour importer une police d'écriture externe, on l'importe comme ci dessous dans le fichier input.css  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');@tailwind base;
+@tailwind components;
+
+@layer components {
+    .module-card {
+        @apply block hover:bg-orange-600 focus:bg-orange-600 transition p-6 rounded flex flex-col justify-between min-h-[160px];
+    }
+}
+
+@tailwind utilities;
+```
+
+#### tailwind.config.js
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // content, c'est la liste des fichiers à scanner, la ou les classes Tailwind seront sollicitées (tout les fichiers html, php et twig présents dans le dossier src/)
+  content: ["./src/**/*.{html,php,twig}"],
+  // theme, c'est le design system du projet, c'est ce qui permet de définir toutes les valeurs par défaut de Tailwind (couleurs, les tailles, les espacements, ...)
+  theme: {
+    // Ici le band n'est aps anodin, sans lui Tailwind remplacerait TOUTE la palette de couleurs par défaut de Tailwind (bleu, rouge, vert, ...) par cette couleur, plus auucn clsse bg-blue-500 ne fonctionnerait
+    extend: {
+      colors: {
+          brand: {
+          50: "#F0F9FF", 100: "#E0F2FE", 200: "#BAE6FD", 400: "#38BDF8",
+          500: "#0EA5E9", 600: "#0284C7", 700: "#0369A1", 900: "#0C4A6E"
+          },
+          module1 : "#799DA7",
+          module2 : "#A6C4CE",
+          module3 : "#9BC0C3",
+        }
+    },
+    fontFamily: {
+      sans : ["Raleway", "sans-serif", "system-ui"]
+    }
+  },
+  //plugins, c'est une liste de fonctionnalités aditionnelles qu'on peut brancher.
+  plugins: [],
+}
+```

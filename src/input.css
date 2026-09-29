@@ -1,3 +1,11 @@
-@tailwind base;
+/* Pour importer une police d'écriture externe, on l'importe comme ci dessous dans le fichier input.css  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');@tailwind base;
 @tailwind components;
+
+@layer components {
+    .module-card {
+        @apply block hover:bg-orange-600 focus:bg-orange-600 transition p-6 rounded flex flex-col justify-between min-h-[160px];
+    }
+}
+
 @tailwind utilities;
